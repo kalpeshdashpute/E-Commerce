@@ -1,0 +1,69 @@
+<header>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a href="#" class="navbar-brand">TOLD</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#CollapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="CollapsibleNavbar">
+                <ul class="navbar-nav text-center ml-auto">
+                    <li class="nav-item">
+                        <a routerLink="" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a routerLink="features" class="nav-link">FEATURES</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a routerLink="cool-features" class="nav-link">SERVICES</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a routerLink="contact" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                       </li>
+                       
+                    <li class="nav-item px-4">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-warning">LOGIN</button>
+                            <div class="dropdown-content">
+                        <a routerLink="adminLogin" class="nav-link">ADMIN LOGIN </a>
+                        <a routerLink="signIn" class="nav-link">USER LOGIN </a>
+                              
+                        </div>
+                          </div>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <div class="dropdown">
+                            <button type="button" *ngIf="loginUser" class="btn btn-warning"  (click)=Logout()>LOGOUT</button>
+                           
+                  <a routerLink="Logout"  class="nav-link"></a>
+                        
+                     </div>
+                    </li>
+
+                    
+                </ul>
+                   
+           </div>        
+
+            </div>
+            </nav>
+</header>
+       
+    <section class="section1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>We help startups to Launch <br> their products</h1> <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>aodio harum. Est ut, culpa
+                    debitis nulla,dolor consectetur placeat.</p> <br>
+                <button type="button" class="btn btn-outline" style="background-color:#e9a447;" >Learn More</button>
+                <button type="button" class="btn btn-outline">Watch</button>
+            </div>
+            <div class="col-md-4">
+              <img src="assets/images/aaa.png" style="width:100%;height:100%">  
+            </div>
+        </div>

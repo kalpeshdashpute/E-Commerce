@@ -1,0 +1,38 @@
+
+<section class="section7">
+    <h2 class="text-center pb-5 "style="padding:15px;font-weight:bold">Contact Us</h2>
+    
+   <div class="container">
+        <form [formGroup]="fgregister">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-3">
+                    <label> Name </label>
+                    <input type="text" class="form-control" placeholder="Name" formControlName="name">
+                </div><br>
+                <div class="col-lg-3">
+                    <label>Email</label>
+                    <input type="email"  class="form-control" placeholder="Email" formControlName="email">
+                </div><br>
+                <div class="col-lg-3">
+                    <label>password</label>
+                    <input type="password"  class="form-control" placeholder="Password" formControlName="password">
+                </div>
+           </div>
+           <br>
+            <div class="row">
+                <div class="offset-lg-2 col-lg-9">
+                    <label for="">Message</label>
+                    <textarea class="form-control" formControlName="message" rows="5" col="10" ></textarea>
+                </div>
+            </div>
+          
+          <div class="row ">  
+            <div class="col-md-2"></div>    
+        <div class="col-lg-9"><div class="mt-2"><button type="button" (click)="register()" [disabled]="!fgregister.valid" class="btn btn-outline btn-large btn-block" style="font-weight:bold;">Submit</button></div>
+      </div>    
+     
+     </div>   
+    </form>
+    </div>
+</section>
